@@ -1,15 +1,21 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from 'expo-router';
-import { useColorScheme } from 'react-native';
+import { Stack } from "expo-router";
+import { View, Text } from "react-native";
+import { useFonts, Lato_400Regular, Lato_700Bold } from '@expo-google-fonts/lato';
 
-import { AnimatedSplashOverlay } from '@/components/animated-icon';
-import AppTabs from '@/components/app-tabs';
+export default function RootLayout() {
+  let [fontsLoaded] = useFonts({
+    LatoRegular: Lato_400Regular,
+    LatoBold: Lato_700Bold,
+  });
 
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
+  if (!fontsLoaded) {
+    return <View style={{ flex: 1, backgroundColor: '#1A312C' }} />;
+  }
+
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <AnimatedSplashOverlay />
-      <AppTabs />
-    </ThemeProvider>
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Screen name="index" />
+      <Stack.Screen name="task/[id]" options={{ presentation: 'modal' }} />
+    </Stack>
   );
 }
