@@ -19,21 +19,13 @@ This project was built using **React Native** and **Expo**. The focus was on del
 To run this project locally on your machine, follow these steps:
 
 **1. Clone the repository**
-\`\`\`bash
-git clone <(https://github.com/Klinti13/pritech-rn-task)>
+```bash
+git clone [https://github.com/Klinti13/pritech-rn-task.git](https://github.com/Klinti13/pritech-rn-task.git)
 cd react-native-technical-task
-\`\`\`
 
-**2. Install dependencies**
-Make sure you have Node.js installed, then run:
-\`\`\`bash
 npm install
-\`\`\`
-
-**3. Start the application**
-\`\`\`bash
 npx expo start
-\`\`\`
-* Press `i` to open in the iOS Simulator.
-* Press `a` to open in the Android Emulator.
-* Or scan the QR code with the **Expo Go** app on your physical device.
+
+Press i to open in the iOS Simulator.
+Press a to open in the Android Emulator.
+Or scan the QR code with the Expo Go app on your physical device.
