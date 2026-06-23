@@ -18,9 +18,8 @@ This project was built using **React Native** and **Expo**. The focus was on del
 
 To run this project locally on your machine, follow these steps:
 
-**1. Clone the repository**
 ```bash
-git clone [https://github.com/Klinti13/pritech-rn-task.git](https://github.com/Klinti13/pritech-rn-task.git)
+git clone https://github.com/Klinti13/pritech-rn-task.git
 cd react-native-technical-task
 
 npm install
