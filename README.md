@@ -25,7 +25,7 @@ cd react-native-technical-task
 npm install
 npx expo start
 
-```bash
+```
 
 Press i to open in the iOS Simulator.
 Press a to open in the Android Emulator.
