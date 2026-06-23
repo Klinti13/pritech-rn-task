@@ -20,7 +20,7 @@ To run this project locally on your machine, follow these steps:
 
 **1. Clone the repository**
 \`\`\`bash
-git clone <YOUR_GITHUB_REPO_LINK_HERE>
+git clone <(https://github.com/Klinti13/pritech-rn-task)>
 cd react-native-technical-task
 \`\`\`
 
